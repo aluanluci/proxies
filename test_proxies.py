@@ -80,5 +80,3 @@ for _ in range(10):
 
 # for _ in range(10):
 #     threading.Thread(target=check_proxies).start()
-
-
