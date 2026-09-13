@@ -35,7 +35,7 @@ def main():
                 if not proxy in j['https']:
                     j['https'].append(proxy)
                     f.seek(0)
-                    json.dump(j, f)
+                    json.dump(j, f, indent=4)
                     f.truncate()
 
         if http.status_code==200:
@@ -45,7 +45,7 @@ def main():
                 if not proxy in j['http']:
                     j['http'].append(proxy)
                     f.seek(0)
-                    json.dump(j, f)
+                    json.dump(j, f, indent=4)
                     f.truncate()
 
 
