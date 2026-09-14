@@ -61,7 +61,7 @@ def main():
                     f.truncate()
             run(['git', 'add', 'valids.json'])
             run(['git', 'commit', '-m', 'Updated: valids.json'])
-            run(['git', 'push', 'origin', 'main'])
+            run(['git', 'push', 'aluanluci/proxies', 'main'])
 
         if http.status_code==401:
             print(f'\033[32m(http) {proxy}\033[0m')
