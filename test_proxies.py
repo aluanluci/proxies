@@ -50,7 +50,8 @@ def main():
             http=get(url.replace('https', 'http'), proxies={"http": proxy}, timeout=5)
         except:
             continue
-        if https.status_code==401:
+
+        if https.status_code==200:
             print(f'\033[32m(https) {proxy}\033[0m')
             with open('valids.json', 't+r') as f:
                 j=json.load(f)
@@ -63,7 +64,7 @@ def main():
             run(['git', 'commit', '-m', 'Updated: valids.json'])
             run(['git', 'push', 'aluanluci/proxies', 'main'])
 
-        if http.status_code==401:
+        if http.status_code==200:
             print(f'\033[32m(http) {proxy}\033[0m')
             with open('valids.json', 't+r') as f:
                 j=json.load(f)
