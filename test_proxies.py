@@ -4,7 +4,7 @@ import json, re
 
 
 q = queue.Queue()
-url="https://api.prezaofree.com.br/adserver/campaign/v3/2b25a088-84ea-11ef-9082-0e639a16be05?size=100"
+url="https://ipinfo.io/json"
 
 with open('proxies.txt', 'r') as f:
     proxies = f.read().split('\n')
