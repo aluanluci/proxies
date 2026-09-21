@@ -1,5 +1,7 @@
 {
-    "http": [],
+    "http": [
+        "http://43.134.49.34:8080"
+    ],
     "https": [
         "http://hodfbnaw:3xaiao9l21h0@31.59.20.176:6754",
         "http://hodfbnaw:3xaiao9l21h0@45.38.107.97:6014",
